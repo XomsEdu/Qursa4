@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>WebStudio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header_container">
+                <a class="top_logo" href="#"><svg class="logo"><use href="./assets/svg/logo.svg"></use></svg></a>
+                <nav class="header_nav">
+                    <ul class="header_nav_list">
+                        <li><a class="header_nav_link" href="">Category</a></li>
+                        <li><a class="header_nav_link" href="">Top selling</a></li>
+                        <li><a class="header_nav_link" href="">Easy and fast</a></li>
+                        <li><a class="header_nav_link" href="">Testimonials</a></li>
+                    </ul>
+                </nav>
+                <button class="header_mobile_button" type="button" data-menu-button aria-expanded="false">
+                    <svg class="mobile_button">
+                        <use class="mobile_button--close" href=""></use>
+                        <use class="mobile_button--open" href=""></use>
+                    </svg>
+                </button>
+                <svg class="header_decore"><use href=""/></svg>
+            </div>
+            <div class="mobile_menu" data-menu>
+                <ul class="mobile_menu_nav_list">
+                    <li><a class="mobile_nav_link" href="">Category</a></li>
+                    <li><a class="mobile_nav_link" href="">Top selling</a></li>
+                    <li><a class="mobile_nav_link" href="">Easy and fast</a></li>
+                    <li><a class="mobile_nav_link" href="">Testimonials</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="hero">
+                <div class="hero_texts">
+                    <h3 class="hero_tagline">Best destinations around the world</h3>
+                    <h1 class="hero_title">Travel, enjoy and live a new and full life</h1>
+                    <p class="hero_description">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+                    <button class="hero_button" type="button" data-modal-open>Find out more</button>
+                </div>
+                <picture class="hero_picture">
+                    <source srcset="" media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/png"/>
+                    <source srcset="" media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/png"/>
+                    <source srcset="" media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/png"/>
+                    <img srcset="" src="" alt="Фотографія туристки з валізами" width="270" height="260"/>
+                </picture>
+            </section>
+
+            <section class="category">
+                <div class="container">
+                    <h3 class="section_tag">Category</h3>
+                    <h2 class="section_title">We offer best services</h2>
+                    <ul class="category_item_list">
+                        <li class="category_item"><div class="category_item_icon"><svg class="icon" width="?" height="?"><use href=""/></svg></div>
+                            <h3 class="category_item_title">Calculated Weather</h3><p>Built Wicket longer admire do barton vanity itself do in it.</p></li>
+                        <li class="category_item"><div class="category_item_icon"><svg class="icon" width="?" height="?"><use href=""/></svg></div>
+                            <h3 class="category_item_title">Best Flights</h3><p>Engrossed listening. Park gate sell they west hard for the.</p></li>
+                        <li class="category_item"><div class="category_item_icon"><svg class="icon" width="?" height="?"><use href=""/></svg></div>
+                            <h3 class="category_item_title">Local Events</h3><p>Barton vanity itself do in it. Preferd to men it engrossed listening.</p></li>
+                        <li class="category_item"><div class="category_item_icon"><svg class="icon" width="?" height="?"><use href=""/></svg></div>
+                            <h3 class="category_item_title">Customization</h3><p>We deliver outsourced aviation services for military customers.</p></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="top_selling">
+                <div class="container">
+                    <h3 class="section_tag">Top Selling</h3>
+                    <h2 class="section_title">Top Destinations</h2>
+                    <ul class="top_selling_list">
+                        <li class="top_selling_item">
+                            <picture>
+                                <source srcset="" media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/jpg"/>
+                                <source srcset="" media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/jpg"/>
+                                <source srcset="" media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/jpg"/>
+                                <img srcset="" src="" alt="Фото Римського Колізею"width="270" height="260"/>
+                            </picture>
+                            <div class="top_selling_description"><h3 class="top_selling_description-title">Rome, Italy</h3>
+                                <p class="top_selling_description-text"><svg class="icon" width="?" height="?"><use href=""/></svg> 10 Days Trip</p></div>
+                        </li>
+                        <li class="top_selling_item">
+                            <picture>
+                                <source srcset="" media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/jpg"/>
+                                <source srcset="" media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/jpg"/>
+                                <source srcset="" media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/jpg"/>
+                                <img srcset="" src="" alt="Фото Біг Бена в Лондоні"width="270" height="260"/>
+                            </picture>
+                            <div class="top_selling_description"><h3 class="top_selling_description-title">London, UK</h3>
+                                <p class="top_selling_description-text"><svg class="icon" width="?" height="?"><use href=""/></svg> 12 Days Trip</p></div>
+                        </li>
+                        <li class="top_selling_item">
+                            <picture>
+                                <source srcset="" media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/jpg"/>
+                                <source srcset="" media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/jpg"/>
+                                <source srcset="" media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/jpg"/>
+                                <img srcset="" src="" alt="Фото європейського міста"width="270" height="260"/>
+                            </picture>
+                            <div class="top_selling_description"><h3 class="top_selling_description-title">Full Europe</h3>
+                                <p class="top_selling_description-text"><svg class="icon" width="?" height="?"><use href=""/></svg> 28 Days Trip</p></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="easy_and_fast">
+                <div class="container">
+                    <div class="left_text">
+                        <h3 class="section_tag_left">Easy and Fast</h3>
+                        <h2 class="section_title_left">Book Your Next Trip In 3 Easy Steps</h2>
+                        <ul class="easy_and_fast_list">
+                            <li class="easy_and_fast_item"><svg class="easy_and_fast_icon"><use href=""/></svg>
+                                <h3 class="easy_and_fast_item_title">Choose Destination</h3><p class="easy_and_fast_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p></li>
+                            <li class="easy_and_fast_item"><svg class="easy_and_fast_icon"><use href=""/></svg>
+                                <h3 class="easy_and_fast_item_title">Make Payment</h3><p class="easy_and_fast_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p></li>
+                            <li class="easy_and_fast_item"><svg class="easy_and_fast_icon"><use href=""/></svg>
+                                <h3 class="easy_and_fast_item_title">Reach Airport on Selected Date</h3><p class="easy_and_fast_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p></li>
+                        </ul>
+                    </div>
+                    <div class="right_block">
+                        <img class="easy_and_fast_block_img" src="" alt=""/>
+                        <li class="right_block_text">
+                            <h3 class="right_block_title"></h3>
+                            <p class="right_block_description"></p>
+                            <ul class="right_block_list">
+                                <li class="right_block_icon"><a href="#" rel="nofollow">
+                                    <svg class="icon" width="20" height="20"><use href=""></use></svg></a></li>
+                                <li class="right_block_icon"><a href="#" rel="nofollow">
+                                    <svg class="icon" width="20" height="20"><use href=""></use></svg></a></li>
+                                <li class="right_block_icon"><a href="#" rel="nofollow">
+                                    <svg class="icon" width="20" height="20"><use href=""></use></svg></a></li>
+                            </ul>
+                            <li class="right_block_description"><svg class="right_block_icon"></svg><p class="right_block_description"></p></li>
+                        </li>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="left_text">
+                    <h3 class="section_tag_left">Testemonials</h3>
+                    <h2 class="section_title_left">What People Say About Us.</h2>
+                </div>
+                <div class="right_side">
+                    <li class="comment_item"><img class="comment_img" srcset="" src="" alt="Фото коментатора"width="270" height="260"/>
+                        <p class="comment_text">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+                        <h3 class="comment_name">Mike taylor</h3><p class="comment_location">Lahore, Pakistan</p>
+                    </li>
+                </div>
+            </section>
+            <section class="companies">
+                <div class="container">
+                    <ul class="companies_list">
+                      <li class="companies_item"><a href="#" class="company_link"><svg class="company_logo" width="106" height="60"><use href=""></use></svg></a></li>
+                      <li class="companies_item"><a href="#" class="company_link"><svg class="company_logo" width="106" height="60"><use href="" ></use></svg></a></li>
+                      <li class="companies_item"><a href="#" class="company_link"><svg class="company_logo" width="106" height="60"><use href=""></use></svg></a></li>
+                      <li class="companies_item"><a href="#" class="company_link"><svg class="company_logo" width="106" height="60"><use href=""></use></svg></a></li>
+                      <li class="companies_item"><a href="#" class="company_link"><svg class="company_logo" width="106" height="60"><use href=""></use></svg></a></li>
+                    </ul>
+                  </div>
+            </section>
+            <section class="subscribe_section">
+                <div class="container">
+                    <h3 class="subscribe_title">Subscribe to get information, latest news and other interesting offers about Jadoo</h3>
+                    <div class="subscribe_object">
+                        <p class="subscribe_form_text">Підпишіться на розсилку</p>
+                        <form class="subscribe_form"><input type="email" name="email"placeholder="Your E-mail" class="subscribe_form_input">
+                            <button type="submit" class="subscribe_form_button">Subscribe</use></svg></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer_description">
+                    <a href = "index.html" class="footer_logo"><span class="footer_logo-Jadoo">Jadoo</span></a>
+                    <p class="footer_description_text">Book your trip in minute, get full Control for much longer.</p>
+                </div>
+                <div class="footer_lists">
+                    <li class="footer_list"><h3 class="footer_list_title">Company</h3>
+                        <a href="" class="footer_list_item">About</a>
+                        <a href="" class="footer_list_item">Careers</a>
+                        <a href="" class="footer_list_item">Mobile</a>
+                    </li>
+                    <li class="footer_list"><h3 class="footer_list_title">Contact</h3>
+                        <a href="" class="footer_list_item">Help/FAQ</a>
+                        <a href="" class="footer_list_item">Press</a>
+                        <a href="" class="footer_list_item">Affilates</a>
+                    </li>
+                    <li class="footer_list"><h3 class="footer_list_title">More</h3>
+                        <a href="" class="footer_list_item">Airlinefees</a>
+                        <a href="" class="footer_list_item">Airlime</a>
+                        <a href="" class="footer_list_item">Low fare tips</a>
+                    </li>
+                </div>
+                <div class="footer_socials">
+                    <ul class="footer_social-list">
+                        <li class="footer_social-item"><a href="https://www.facebook.com" class="footer_social-icon" rel="nofollow"><svg class="icon" width="20" height="20"><use href=""></use></svg></a></li>
+                        <li class="footer_social-item"><a href="https://www.instagram.com" class="footer_social-icon" rel="nofollow"><svg class="icon" width="20" height="20"><use href=""></use></svg></a></li>
+                        <li class="footer_social-item"><a href="https://twitter.com" class="footer_social-icon" rel="nofollow"><svg class="icon" width="20" height="20"><use href=""></use></svg></a></li>
+                        <p class="footer_social_text">Приєднуйтесь</p>
+                        <li class="footer_apps-item"><a href="https://www.facebook.com" class="footer_social-icon" rel="nofollow"><svg class="icon" width="20" height="20"><use href=""></use></svg></a></li>
+                        <li class="footer_apps-item"><a href="https://www.instagram.com" class="footer_social-icon" rel="nofollow"><svg class="icon" width="20" height="20"><use href=""></use></svg></a></li>
+                    </ul>
+                </div>
+                <p class="footer_rights"></p>
+            </div>
+        </footer>
+    </body>
+</html>
