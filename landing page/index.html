@@ -4,18 +4,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>WebStudio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
-        <link rel="stylesheet" href="./css/main.css">
+        <title>Jadoo</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gilroy-ExtraBold%3A400"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A400"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans%3A400%2C500"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C700"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C600%2C700"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Volkhov%3A700"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600"/>
+        <link rel="stylesheet" href="./styles/main.css"/>
     </head>
     <body>
         <header class="header">
-            <div class="container header_container">
-                <a class="top_logo" href="#"><svg class="logo"><use href="./assets/svg/logo.svg#Logo"></use></svg></a>
+            <div class="header_container">
+                <svg class="top_logo" href="#"><use href="./assets/svg/logo.svg#Logo"></use></svg>
                 <nav class="header_nav">
                     <ul class="header_nav_list">
                         <li><a class="header_nav_link" href="">Category</a></li>
@@ -37,10 +40,10 @@
                     <button class="hero_button" type="button" data-modal-open>Find out more</button>
                 </div>
                 <picture class="hero_picture">
-                    <source srcset="" media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/png"/>
-                    <source srcset="" media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/png"/>
-                    <source srcset="" media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/png"/>
-                    <img srcset="" src="" alt="Фотографія туристки з валізами" width="270" height="260"/>
+                    <source src="./assets/images/hero_section/Traveller1x.png" media="(min-width: 1200px)" sizes="764px" width="764" height="764" type="image/png"/>
+                    <source src="./assets/images/hero_section/Traveller2x.png" media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/png"/>
+                    <source src="./assets/images/hero_section/Traveller3x.png" media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/png"/>
+                    <img src="./assets/images/hero_section/Traveller1x.png" alt="Фотографія туристки з валізами" width="764" height="764"/>
                 </picture>
             </section>
 
@@ -67,34 +70,19 @@
                     <h2 class="section_title">Top Destinations</h2>
                     <ul class="top_selling_list">
                         <li class="top_selling_item">
-                            <picture>
-                                <source srcset="" media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/jpg"/>
-                                <source srcset="" media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/jpg"/>
-                                <source srcset="" media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/jpg"/>
-                                <img srcset="" src="" alt="Фото Римського Колізею"width="270" height="260"/>
-                            </picture>
+                            <img src="./assets/images/destintions_section/destinations-rome.png" alt="Фото Римського Колізею" width="314" height="457"/>
                             <div class="top_selling_description"><h3 class="top_selling_description-title">Rome, Italy</h3>
-                                <p class="top_selling_description-text"><svg class="icon" width="20" height="20"><use href="./assets/svg/navigation.svg#Navigation"/></svg> 10 Days Trip</p></div> <!-- SVG availiable -->
+                                <p class="top_selling_description-text"><svg class="icon" width="20" height="20"><use href="./assets/svg/navigation.svg#Navigation"/></svg> 10 Days Trip</p></div>
                         </li>
                         <li class="top_selling_item">
-                            <picture>
-                                <source srcset="" media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/jpg"/>
-                                <source srcset="" media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/jpg"/>
-                                <source srcset="" media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/jpg"/>
-                                <img srcset="" src="" alt="Фото Біг Бена в Лондоні"width="270" height="260"/>
-                            </picture>
+                            <img src="./assets/images/destintions_section/destinations-london.png" alt="Фото Лондонського БігБена" width="314" height="457"/>
                             <div class="top_selling_description"><h3 class="top_selling_description-title">London, UK</h3>
-                                <p class="top_selling_description-text"><svg class="icon" width="20" height="20"><use href="./assets/svg/navigation.svg#Navigation"/></svg> 12 Days Trip</p></div> <!-- SVG availiable -->
+                                <p class="top_selling_description-text"><svg class="icon" width="20" height="20"><use href="./assets/svg/navigation.svg#Navigation"/></svg> 12 Days Trip</p></div>
                         </li>
                         <li class="top_selling_item">
-                            <picture>
-                                <source srcset="" media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/jpg"/>
-                                <source srcset="" media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/jpg"/>
-                                <source srcset="" media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/jpg"/>
-                                <img srcset="" src="" alt="Фото європейського міста"width="270" height="260"/>
-                            </picture>
+                            <img src="./assets/images/destintions_section/destinations-eu.png" alt="Фото Європейського міста" width="314" height="457"/>
                             <div class="top_selling_description"><h3 class="top_selling_description-title">Full Europe</h3>
-                                <p class="top_selling_description-text"><svg class="icon" width="20" height="20"><use href="./assets/svg/navigation.svg#Navigation"/></svg> 28 Days Trip</p></div> <!-- SVG availiable -->
+                                <p class="top_selling_description-text"><svg class="icon" width="20" height="20"><use href="./assets/svg/navigation.svg#Navigation"/></svg> 28 Days Trip</p></div>
                         </li>
                     </ul>
                 </div>
@@ -106,28 +94,28 @@
                         <h3 class="section_tag_left">Easy and Fast</h3>
                         <h2 class="section_title_left">Book Your Next Trip In 3 Easy Steps</h2>
                         <ul class="easy_and_fast_list">
-                            <li class="easy_and_fast_item"><svg class="easy_and_fast_icon"><use href="./assets/svg/booktrip_1.svg#Group7"/></svg> <!-- SVG availiable -->
+                            <li class="easy_and_fast_item"><svg class="easy_and_fast_icon"><use href="./assets/svg/booktrip_1.svg#Group7"/></svg>
                                 <h3 class="easy_and_fast_item_title">Choose Destination</h3><p class="easy_and_fast_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p></li>
-                            <li class="easy_and_fast_item"><svg class="easy_and_fast_icon"><use href="./assets/svg/booktrip_2.svg#Group12"/></svg> <!-- SVG availiable -->
+                            <li class="easy_and_fast_item"><svg class="easy_and_fast_icon"><use href="./assets/svg/booktrip_2.svg#Group12"/></svg>
                                 <h3 class="easy_and_fast_item_title">Make Payment</h3><p class="easy_and_fast_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p></li>
-                            <li class="easy_and_fast_item"><svg class="easy_and_fast_icon"><use href="./assets/svg/booktrip_3.svg#Group11"/></svg> <!-- SVG availiable -->
+                            <li class="easy_and_fast_item"><svg class="easy_and_fast_icon"><use href="./assets/svg/booktrip_3.svg#Group11"/></svg>
                                 <h3 class="easy_and_fast_item_title">Reach Airport on Selected Date</h3><p class="easy_and_fast_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p></li>
                         </ul>
                     </div>
                     <div class="right_block">
-                        <img class="easy_and_fast_block_img" src="" alt=""/>
+                        <img class="easy_and_fast_block_img" src="./assets/images/traveler-eaf.jpg" alt="Фото туристки"/>
                         <li class="right_block_text">
                             <h3 class="right_block_title"></h3>
                             <p class="right_block_description"></p>
                             <ul class="right_block_list">
                                 <li class="right_block_icon"><a href="#" rel="nofollow">
-                                    <svg class="icon" width="100" height="100"><use href="./assets/svg/eaf_leaf.svg#svg1"/></svg></a></li> <!-- SVG availiable -->
+                                    <svg class="icon" width="100" height="100"><use href="./assets/svg/eaf_leaf.svg#svg1"/></svg></a></li>
                                 <li class="right_block_icon"><a href="#" rel="nofollow">
-                                    <svg class="icon" width="100" height="100"><use href="./assets/svg/eaf_map.svg#svg1"/></svg></a></li> <!-- SVG availiable -->
+                                    <svg class="icon" width="100" height="100"><use href="./assets/svg/eaf_map.svg#svg1"/></svg></a></li>
                                 <li class="right_block_icon"><a href="#" rel="nofollow">
-                                    <svg class="icon" width="100" height="100"><use href="./assets/svg/eaf_nav.svg#svg1"/></svg></a></li> <!-- SVG availiable -->
+                                    <svg class="icon" width="100" height="100"><use href="./assets/svg/eaf_nav.svg#svg1"/></svg></a></li>
                             </ul>
-                            <li class="right_block_description"><svg class="right_block_icon"><use href="./assets/svg/building.svg#building"/></svg><p class="right_block_description"></p></li> <!-- SVG availiable -->
+                            <li class="right_block_description"><svg class="right_block_icon"><use href="./assets/svg/building.svg#building"/></svg><p class="right_block_description"></p></li>
                         </li>
                     </div>
                 </div>
@@ -139,7 +127,7 @@
                     <h2 class="section_title_left">What People Say About Us.</h2>
                 </div>
                 <div class="right_side">
-                    <li class="comment_item"><img class="comment_img" srcset="" src="" alt="Фото коментатора"width="270" height="260"/>
+                    <li class="comment_item"><img class="comment_img" src="./assets/images/icons/user-icon.png" alt="Фото коментатора"width="68" height="68"/>
                         <p class="comment_text">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
                         <h3 class="comment_name">Mike taylor</h3><p class="comment_location">Lahore, Pakistan</p>
                     </li>
@@ -148,11 +136,11 @@
             <section class="companies">
                 <div class="container">
                     <ul class="companies_list">
-                      <li class="companies_item"><a href="#" class="company_link"><img src="." alt="" width="400"/></a></li>
-                      <li class="companies_item"><a href="#" class="company_link"><img src="." alt="" width="400"/></a></li>
-                      <li class="companies_item"><a href="#" class="company_link"><img src="." alt="" width="400"/></a></li>
-                      <li class="companies_item"><a href="#" class="company_link"><img src="." alt="" width="400"/></a></li>
-                      <li class="companies_item"><a href="#" class="company_link"><img src="." alt="" width="400"/></a></li>
+                      <li class="companies_item"><a href="#" class="company_link"><img src="./assets/images/company_section/image 1company.png" alt="axon" width="130"/></a></li>
+                      <li class="companies_item"><a href="#" class="company_link"><img src="./assets/images/company_section/image 2company.png" alt="Jetstar" width="162"/></a></li>
+                      <li class="companies_item"><a href="#" class="company_link"><img src="./assets/images/company_section/image 3company.png" alt="Expedia" width="162"/></a></li>
+                      <li class="companies_item"><a href="#" class="company_link"><img src="./assets/images/company_section/image 4company.png" alt="Qantas" width="162"/></a></li>
+                      <li class="companies_item"><a href="#" class="company_link"><img src="./assets/images/company_section/image 5company.png" alt="Alitalia" width="94"/></a></li>
                     </ul>
                   </div>
             </section>
