@@ -1,18 +1,18 @@
-// script.js
-
 let currentSlide = 0;
 
 function changeSlide(direction) {
-    const feedbackBoxes = document.querySelectorAll('.feedback-box');
+    const slider = document.querySelector('.slider');
+    const sliderWidth = document.querySelector('.feedback-box').offsetWidth;
+    const totalSlides = document.querySelectorAll('.feedback-box').length;
 
-    // Hide the current feedback box
-    feedbackBoxes[currentSlide].classList.remove('show');
-    feedbackBoxes[currentSlide].classList.add('hide');
+    currentSlide += direction;
 
-    // Update current slide index
-    currentSlide = (currentSlide + direction + feedbackBoxes.length) % feedbackBoxes.length;
+    if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    } else if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    }
 
-    // Show the next feedback box
-    feedbackBoxes[currentSlide].classList.remove('hide');
-    feedbackBoxes[currentSlide].classList.add('show');
+    const newTransformValue = -currentSlide * sliderWidth;
+    slider.style.transform = `translateX(${newTransformValue}px)`;
 }

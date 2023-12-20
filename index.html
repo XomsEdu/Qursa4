@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./js/smooth.js" defer></script>
     <script src="./js/coment_slider.js" defer></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                 <p class="description">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it
                     engrossed listening. Park gate sell they west hard for the.</p>
                 <div class="btns">
-                    <a href=""><button class="find-out-more">Find out more</button></a>
+                    <a href="#sub"><button class="find-out-more">Find out more</button></a>
                 </div>
             </div>
             <img src="./assets/images/hero_section/hero-img.png" alt="Турист з валізами" class="hero-img">
@@ -140,7 +141,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="booking-card">
                 <div class="booking-card-card">
                     <img src="./assets/images/traveler-eaf.jpg" alt="" class="booking-card-card-image">
@@ -195,13 +195,13 @@
         </div>
     </section>
 
-    <section class="subscribe-section">
+    <section class="subscribe-section" id="sub">
         <div class="subscribe">
             <img src="./assets/images/icons/sub-icon.png" alt="" class="send">
             <h3>Subscribe to get information, latest news and other interesting offers about Jadoo</h3>
             <div class="email">
-                <input type="email" name="" id="your-email" placeholder="Your email">
-                <button class="sub-btn">Subscribe</button>
+                <input type="email" id="your-email" placeholder="Your email"> <br>
+                <button class="sub-btn" onclick="subscribe();">Subscribe</button>
             </div>
         </div>
     </section>
@@ -256,6 +256,29 @@
             <p>All rights reserved@jadoo.co</p>
         </a>
     </div>
+
+    <script src="./email.min.js"></script>
+    <script src="./js/subscribe.js"></script>
+
+    <script>
+        function subscribe(){
+            (function(){
+                emailjs.init(fI88cSR41iYjWjodl)
+            })
+            var params = {
+                to: document.querySelector("#your-email").value,
+            }
+            var serviceID = "service_bzupx32";
+            var templateID = "template_i2r4ubf";
+
+            emailjs.send(serviceID, templateID, params)
+            .then(res => {
+                alert("Email was sent");
+            })
+            .catch()
+        }
+    </script>
+
 </body>
 
 </html>
