@@ -9,6 +9,8 @@
     <script src="https://kit.fontawesome.com/399ce3e909.js" crossorigin="anonymous"></script>
     <title>Jadoo</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./js/smooth.js" defer></script>
+    <script src="./js/coment_slider.js" defer></script>
 </head>
 
 <body>
@@ -20,10 +22,10 @@
                 <i class="fas fa-bars fa-2x"></i>
             </label>
             <ul>
-                <li id="nav"><a href="">Desitnations</a></li>
-                <li id="nav"><a href="">Hotels</a></li>
-                <li id="nav"><a href="">Flights</a></li>
-                <li id="nav"><a href="">Bookings</a></li>
+                <li id="nav"><a href="#destinations">Desitnations</a></li>
+                <li id="nav"><a href="#booking">Booking</a></li>
+                <li id="nav"><a href="#feedback">Testemonials</a></li>
+                <li id="nav"><a href="#companies">Companies</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +45,7 @@
     </section>
     <section class="services">
         <div class="container">
-            <h3 class="category">CATEGORY</h3>
+            <h3 class="category">Category</h3>
             <h2 class="category-title">We Offer Best Services</h2>
             <div class="flex">
                 <div class="offer-cards">
@@ -70,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="top-selling">
+    <section class="top-selling" id="destinations">
         <div class="container">
             <h3 class="category">Top Selling</h3>
             <h2 class="category-title">Top Destinations</h2>
@@ -111,7 +113,7 @@
             </div>
         </div>
     </section>
-    <section class="booking-info">
+    <section class="booking-info" id="booking">
         <div class="booking-process">
             <div class="booking">
                 <p class="easy-and-fast">Easy and Fast</p>
@@ -161,12 +163,14 @@
             </div>
         </div>
     </section>
-    <section class="feedback-section">
+    <section class="feedback-section" id="feedback">
         <div class="feed-back">
             <p class="subheading">Testimonials</p>
             <h3 class="feedback-heading">What people say about Us.</h3>
-            <img src="" alt="" class="slider">
-            <svg class="slider"><use href="./assets/svg/slider_dots.svg#svg"/></svg>
+            <div class="slider-container">
+                <img src="" alt="" class="slider">
+                <svg class="slider"><use href="./assets/svg/slider_dots.svg#svg"/></svg>
+            </div>
         </div>
         <div class="feedback-box">
             <img src="./assets/images/icons/user-icon.png" alt="Comment guy">
@@ -178,10 +182,10 @@
                     <p>CEO of Red Button</p>
                 </div>
             </div>
-            <svg class="up-and-down-arrow"><use href="./assets/svg/slider_pagination.svg#svg"/></svg>
+            <svg class="slider-arrow up-arrow" onclick="changeSlide(1)"><use href="./assets/svg/slider_pagination.svg#svg"/></svg>
         </div>
-    </section>
-    <section class="brands">
+    </section>    
+    <section class="brands" id="companies">
         <div class="brandslogo">
             <img src="./assets/images/company_section/image 1company.png" alt="Axon Airlines" class="brands-logo">
             <img src="./assets/images/company_section/image 2company.png" alt="Jetstar" class="brands-logo">

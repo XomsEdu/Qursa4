@@ -359,6 +359,10 @@ li :hover{
 .feedback-section{
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+}
+.slider-container {
+    overflow: hidden;
 }
 .feed-back{
     margin: auto auto;
@@ -378,11 +382,17 @@ li :hover{
 }
 .slider{
     margin: 40px 0 0 0;
+    display: flex;
+    transition: transform 0.5s ease;
 }
 .feedback-box{
     width: 430px;
     height: 190px;
     margin: 0 auto;
+    flex-shrink: 0;
+}
+.slider-arrow {
+    cursor: pointer;
 }
 .feedbacks{
     width: 306px;
@@ -408,12 +418,15 @@ li :hover{
     font-size: 10px;
     color: #5E6282;
 }
-.up-and-down-arrow{
+.up-arrow{
     position: relative;
     left: 400px;
     bottom: 60px;
     width: 30px;
+    height: 50px;
+    transform: rotate(180deg);
 }
+
 /* /////////////////////////////////////////////////////////////////////// */
 .brands{
     margin: 20px auto 24px;   
@@ -693,6 +706,7 @@ li :hover{
         width: 430px;
         height: 190px;
         padding: 0 4px 0 27px;
+        
     }
     .feedback-box img{
         padding: 0 0 5px 0;
@@ -726,7 +740,7 @@ li :hover{
     }
 }
 @media (max-width: 480px) {
-    .up-and-down-arrow{
+    .up-arrow{
         left: 5px;
         bottom: 20px;
     }
