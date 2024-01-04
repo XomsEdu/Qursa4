@@ -9,17 +9,16 @@
 .container {
     max-width: 80%;
     margin: auto;
-    
 }
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Volkhov', serif;    
-    background-image: url(/Image.png), url(/Decore.png), url(/Ellipse\ 8.png);
+    background-image: url(/assets/images/decore/Decore.png), url(/assets/images/decore/Ellipse.png);
     background-repeat: no-repeat;
-    background-position: right, right, left;
+    background-position: right, left;
     background-size: 640px, 700px 581px, 230px;
-    background-position-y: 55px, 0px, top;
+    background-position-y: top;
     display: block;
     margin: 0;
 }
@@ -40,7 +39,7 @@ nav ul{
 }
 li{
     list-style: none;
-    margin: 0 0 0 45px;
+   
     font-size: 17px;
     font-weight: bold;
 }
@@ -72,6 +71,9 @@ a{
 li :hover{
     color: #f8a800;
 }
+.nav-item{
+    margin-left: 60px;
+}
 /* //////////////////////////////////////////////////////////////// */
 .hero {
     padding-bottom: 0;
@@ -82,6 +84,7 @@ li :hover{
     place-items: center;
 }
 .hero-box {
+    margin-top: 130px;
     width: 100%;
     display: block;
 }
@@ -96,6 +99,8 @@ li :hover{
     font-size: 20px;
     font-weight: bold;
     color: #DF6951;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
 
 .heading {
@@ -104,15 +109,20 @@ li :hover{
     color: #181E4B;
     font-family: 'Volkhov', serif;
     margin: 24px 0 0 0;
-    background-image: url(/Decore-1.png);
+    background-image: url(/assets/images/decore/Decore-tagline.png);
     background-repeat: no-repeat;
-    background-position: 234px 54px; /* Combine X and Y positions */
-    
+    background-position: 150px 54px; /* Combine X and Y positions */
+}
+
+@media (max-width:1336px){
+    .heading {
+        background-position: -30px 120px;
+    }
 }
 
 .description {
     color: #5E6282;
-    font-size: 1px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     margin: 30px 0 0 0;
 }
@@ -160,6 +170,7 @@ li :hover{
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 110px;
 }
 
 /* Offer cards */
@@ -167,24 +178,21 @@ li :hover{
     width: 178px;
     height: 200px;
     border-radius: 15px;
-    margin: 40px;
+    margin: auto;
     cursor: pointer;
     position: relative;
-}
-.offer-cards svg {
-    width: 100%; 
-    height: 100%; 
-    position: absolute; 
-    top: 0;
-    left: 0;
-    pointer-events: none; 
 }
 .offer-cards:hover{
     box-shadow: 0px 0px 10px -3px;
     
 }
 .pic{
-    margin: 4px 0 0 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -100%);
+    width: 113px;
+    height: 90px;
 }
 .offer-cards-title,
 .offer-cards-desc {
@@ -212,49 +220,72 @@ li :hover{
 
 /* Destinations */
 
-.destinations-cards{
+.destinations-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 45px 0 0 0;
+    gap: 36px;
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
-.destinations-card{
-    width: 200px;
-    height: 310px;
+
+.destinations-card {
+    position: relative;
+    width: 314px;
+    height: 457px;
     border-radius: 15px;
-    margin: 10px 82px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
 }
-.destinations-card:hover{
+
+.destinations-card:hover {
     box-shadow: 0px 0px 10px -3px;
 }
-.destinations-image{
-    width: 200px;
-    height: 238px;
+
+.destinations-image {
+    width: 100%;
+    height: auto;
 }
-.name-and-price{
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background-color: rgba(255, 255, 255);
+    padding: 27px 11px;
+}
+
+.name-and-price {
     display: flex;
     justify-content: space-between;
-    padding: 8px 11px 7px;
-    font-family: 'Poppins', sans-serif;    
-    color:#5E6282;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #5E6282;
 }
-.trip-duration{
+
+.trip-duration {
     display: flex;
-    padding: 0 7px;
-    font-family: 'Poppins', sans-serif;    
-    color:#5E6282;
+    justify-content: left;
+    padding-left: 7px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 19px;
+    color: var(--TEXT-CLR, #5E6282);
 }
-.s-nav{
-    width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
-    top: 0;
-    left: 0;
+
+.s-nav {
+    width: 20px;
+    height: 20px;
     pointer-events: none;
+    margin-right: 15px;
 }
+
 /* /////////////////////////////////////////////////////////////////// */
 
 .booking-info{
-    /* width: 1000px; */
     margin: 80px auto;
     background-image: url(/Group\ 589.png);
     background-repeat: no-repeat;
@@ -284,19 +315,19 @@ li :hover{
     margin: 10px 0 0 0;
 }
 .booking-steps{
-    width: 260px;
+    max-width: 395px;
     height: 60px;
     margin: 25px 0;
     display: flex;
+    font-family: 'Poppins', sans-serif;
 }
 .booking-icons{
-    width: 100px;
+    width: 55px;
     height: 50px;
     margin: auto;
 }
 .process{
-    margin: 0 0 0 20px;
-    padding: 4px;
+    margin: 0 0 0 12px;
 }
 .process h5{
     font-size: 13px;
@@ -313,6 +344,7 @@ li :hover{
     background: #ffff;
     border-radius: 25px;
     box-shadow: 0px 0px 10px -3px;
+    font-family: 'Poppins', sans-serif;
 }
 .booking-card-card{
     width: 260px;
@@ -453,18 +485,21 @@ li :hover{
 }
 /* //////////////////////////////////////////////////////////////////////////// */
 .subscribe-section{
-    height: 313px;
-    margin: 0 auto 56px;
+    height: 400px;
     background-image: url(/Group\ 5.png);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
+    position: relative;
 }
 .subscribe{
     border: 1px solid #EEEEF0;
     width: 639px;
     height: 215px;
-    margin: 124px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 70px 15px 15px;
     background-image: url(/Group\ 42.png),url(/Group\ 42\(1\).png);
     background-repeat: no-repeat;
@@ -509,12 +544,15 @@ li :hover{
 /* //////////////////////////////////////////////////////////////// */
 .footer{
     display: flex;
-    /* width: 1100px;
-    height: 150px; */
     margin: 0 auto 60px;
     flex-wrap: wrap;
+    position: relative;
+    gap:30px;
+    font-family: 'Poppins', sans-serif;
 }
 .footer-name{
+    position: absolute;
+    left: 60px;
     margin: 14px auto;
 }
 .footer-name h3{
@@ -531,7 +569,6 @@ li :hover{
 }
 .more-info {
     display: flex;
-    /* width: 400px; */
     margin: 0 0 0 30px;
     flex-wrap: wrap;
 }
@@ -559,8 +596,9 @@ li :hover{
     margin: 20px 0 0 55px;
 }
 .app-and-social-media {
-    margin: 20px auto;
-    align-items: center;
+    position: absolute;
+    right: 60px;
+    top: 10px;
 }
 .social-media {
     height: 50px;
@@ -587,7 +625,7 @@ li :hover{
 
 
 /* ///////////////////////media queries/////////////////////////////////// */
-@media (max-width:1000px){
+@media (max-width:1100px){
     nav ul{
         position: fixed;
         top: 55px;
@@ -624,10 +662,16 @@ li :hover{
     .sign-up{
         width:100px ;
     }
+    .heading {
+        background-position: 260px 54px;
+    }
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
         align-items: center;
+    }
+    .hero-box {
+        margin-top: 50px;
     }
     .btns{
         position: absolute;
@@ -636,6 +680,30 @@ li :hover{
     }
     .hero-img{
         margin-top: 50px;
+    }
+    .flex{
+        margin-top: 50px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .footer-name {
+        position: static;
+    }
+
+    .more-info {
+        margin: 0;
+    }
+
+
+    .app-and-social-media {
+        position: static;
+        text-align: center;
+        margin-top: 30px;
     }
 }
 @media (max-width:900px){
@@ -678,7 +746,7 @@ li :hover{
         line-height: normal;
         font-family: 'Volkhov', serif;
         margin: 24px 0 0 0;
-        background-image: url(/Decore-1.png);
+        background-image: url(/assets/images/decore/Decore-tagline.png);
         background-repeat: no-repeat;
         background-position-x: 130px;
         background-position-y: 47px;
@@ -740,9 +808,6 @@ li :hover{
     }
     .email{
         padding: 9px;
-    }
-    .footer-name {
-        margin: 14px 0 0 30px;
     }
 }
 @media (max-width: 480px) {
