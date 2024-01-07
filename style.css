@@ -100,7 +100,6 @@ li :hover{
     font-weight: bold;
     color: #DF6951;
     font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
 }
 
 .heading {
@@ -146,23 +145,23 @@ li :hover{
 
 /* /////////////////////////////////////////////// */
 .services{
-    /* width: 1179px;
-    height: 380px; */
-    margin: 80px auto 60px;
-    background-image: url(/Group\ 4.png);
+    padding: 60px 0;
+    background-image: url(/assets/images/decore/group4.png);
     background-repeat: no-repeat;
     background-position-x: right;
-    background-size: 115px;
+    background-size: 153px 166px;
 }
 .category{
     text-align: center;
     font-family: 'Poppins', sans-serif;    
     color: #5E6282;
+    font-size: 18px;
+    font-weight: 600;
 }
 .category-title{
     margin: 10px 0 0 0;
     text-align: center;
-    font-size: 36px;
+    font-size: 50px;
     font-family: 'Volkhov', serif;
     color: #14183E;
 }
@@ -170,30 +169,51 @@ li :hover{
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 110px;
+    margin-top: 68px;
+    gap: 20px;
 }
 
 /* Offer cards */
 .offer-cards {
-    width: 178px;
-    height: 200px;
+    width: 267px;
+    height: 314px;
+    display:flex;
+    justify-content:center;
     border-radius: 15px;
-    margin: auto;
     cursor: pointer;
     position: relative;
+    overflow: hidden;
+    .hover-offer-card{
+        visibility: hidden;
+    }
 }
 .offer-cards:hover{
     box-shadow: 0px 0px 10px -3px;
-    
+    background-color: #ffff;
+    overflow: visible;
+    .hover-offer-card{
+        z-index: -100;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        left: -35px;
+        bottom: -33px;
+    }
 }
+
 .pic{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-30%, -100%);
+    top: 113px;
+    transform: translate(0, -100%);
     width: 113px;
     height: 90px;
 }
+
+li.pic{
+    width: 67px;
+    height: 75px;
+}
+
 .offer-cards-title,
 .offer-cards-desc {
     text-align: center;
@@ -201,21 +221,21 @@ li :hover{
     font-family: 'Poppins', sans-serif;
 }
 .offer-cards-title {
-    font-size: 16px;
+    color: var(--text-heading-color, #1E1D4C);
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
     position: absolute;
-    top: 65%;
-    left: 0;
-    right: 0;
-    margin: -12px 0 0 0;
+    top: 149px;
 }
 
 .offer-cards-desc {
-    font-size: 13px;
-    padding: 10px;
+    font-size: 16px;
     position: absolute;
-    top: 130px;
-    left: 0;
-    right: 0;
+    top: 193px;
+    width: 181px;
 }
 
 /* Destinations */
@@ -234,7 +254,6 @@ li :hover{
     width: 314px;
     height: 457px;
     border-radius: 15px;
-    overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; 
 }
@@ -283,10 +302,17 @@ li :hover{
     margin-right: 15px;
 }
 
+.decore-spring {
+    position: absolute;
+    right: -62px;
+    bottom: 47px;
+    z-index: -100;
+}
+
 /* /////////////////////////////////////////////////////////////////// */
 
 .booking-info{
-    margin: 80px auto;
+    padding: 80px 0;
     background-image: url(/Group\ 589.png);
     background-repeat: no-repeat;
     background-position-x: right;
@@ -305,10 +331,10 @@ li :hover{
     font-family: 'Poppins', sans-serif;
     color: #5E6282;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
 }
 .booking-steps-heading{
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Volkhov', serif;
     color: #14183E;
     width: 489px;
@@ -322,33 +348,35 @@ li :hover{
     font-family: 'Poppins', sans-serif;
 }
 .booking-icons{
-    width: 55px;
+    width: 85px;
     height: 50px;
-    margin: auto;
+    margin-right: 12px;
 }
 .process{
-    margin: 0 0 0 12px;
-}
-.process h5{
-    font-size: 13px;
+    font-size: 16px;
     color: #5E6282;
+    line-height: 124.5%;
+}
+.process h4{
+    font-weight: 700;
 }
 .process p{
-    font-size: 10px;
-    color: #5E6282;
+    font-weight: 400;
 }
 .booking-card{
-    width: 293px;
-    height: 300px;
+    width: 370px;
+    height: 400px;
     margin: auto;
     background: #ffff;
     border-radius: 25px;
     box-shadow: 0px 0px 10px -3px;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 .booking-card-card{
-    width: 260px;
-    height: 120px;
+    width: 321px;
+    height: 161px;
+    flex-shrink: 0;
     border-radius: 20px;
     margin: 22px auto;
 
@@ -359,18 +387,20 @@ li :hover{
     border-radius: 21px;    
 }
 .trip-details{
-    margin: 0 0 0 16px;
+    padding: 0 0 0 16px;
 }
 .trip-destination{
-    font-size: 15px;
+    font-size: 18px;
 }
 .trip-date{
-    font-size: 12px;
-    margin: 10px 0;
+    font-size: 16px;
+    padding: 13px 0;
     color: #84829A;
 }
 .trip-info{
     height: 40px;
+    position: absolute;
+    bottom: 81px;
 }
 .trip-info-icon{
     width: 14%;
@@ -380,85 +410,187 @@ li :hover{
 .no-of-people{
     display: flex;
     color:#84829A;
-    font-size: 12px;
+    font-size: 16px;
+    height: 20px;
+    position: absolute;
+    bottom: 31px;
 }
 .number-of-people{
-    margin: 0 0 0 7px;
+    
 }
 .heart{
+    position: absolute;
+    right: 31.7px;
+    bottom: 31.7px;
+    width: 20px;
+    height: 18.58px;
+}
+.heart:hover + .heart-pop-up{
+    display: block;
+}
+
+.heart-pop-up{
+    display: none;
+    position: absolute;
     position: relative;
-    left: 225px;
-    bottom: 40px;
-    width: 30px;
+    width: 263px;
+    height: 129px;
+    background-color: #ffff;
+    box-shadow: 0px 0px 10px -3px;
+}
+.rome-in-heart{
+    width: 74px;
+    height: 66px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 17px;
+    left: 7px;
+}
+.heart-status{
+    color: var(--text-2, #84829A);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.49px;
+    position: absolute;
+    top: 16px;
+    left: 92px;
+}
+.heart-destination{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.27px;
+    position: absolute;
+    top: 39px;
+    left: 90px;
+}
+.heart-trip{
+    color: var(--black, #080809);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.77px;
+    position: absolute;
+    bottom: 37px;
+    left: 90px;
+}
+.heart-loading{
+    position: absolute;
+    bottom: 22px;
+    right: 25px;
 }
 /* //////////////////////////////////////////////////////////// */
-.feedback-section{
-    display: flex;
-    flex-wrap: wrap;
+.feedback-section {
     overflow: hidden;
+    min-height: 270px;
 }
+
+.feedback-container {
+    display: flex;
+    justify-content: space-between; /* Align items at both ends */
+    flex-wrap: wrap;
+    position: relative;
+}
+
+@media (max-width: 1000px) {
+    .feedback-container {
+        flex-direction: column;
+        align-items: center; /* Center the items when in column layout */
+    }
+
+    .feed-back,
+    .feedback-box {
+        position: static; /* Remove absolute positioning */
+        margin: 0; /* Remove any margins */
+    }
+}
+
 .slider-container {
     overflow: hidden;
     height: 120px;
 }
-.feed-back{
-    margin: auto auto;
+
+.feed-back {
+    margin: auto;
 }
-.subheading{
-    font-family: 'Poppins', sans-serif;    
+
+.subheading {
+    font-family: 'Poppins', sans-serif;
     color: #5E6282;
     font-size: 18px;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
-.feedback-heading{
-    font-size: 40px;
+
+.feedback-heading {
+    font-size: 50px;
     font-family: 'Volkhov', serif;
     color: #14183E;
     width: 370px;
     margin: 8px 0 0 0;
 }
-.slider{
+
+.slider {
     margin: 40px 0 0 0;
     display: flex;
     transition: transform 0.5s ease;
 }
-.feedback-box{
-    width: 430px;
-    height: 190px;
-    margin: 0 auto;
+
+.feedback-box {
     flex-shrink: 0;
+    margin: auto;
+    position: relative;
 }
+
 .slider-arrow {
     cursor: pointer;
+    position: absolute;
+    right: -100px;
+    top: 80%;
 }
-.feedbacks{
-    width: 306px;
-    height: 107px;
+
+.feedbacks {
+    font-family: 'Poppins', sans-serif;
+    width: 504px;
+    height: 245px;
     margin: 0px auto;
     position: relative;
     top: -22px;
     border-radius: 10px;
     box-shadow: -2px 6px 19px -12px;
 }
-.feedback{
-    font-size: 11px;
-    font-family: 'Poppins', sans-serif;    
+
+.feedback {
+    font-size: 16px;
     color: #5E6282;
-    padding: 12px 12px 0;
+    padding: 28px 68px 34px 34px;
 }
-.user-info{
+
+.user-info {
     width: 195px;
     margin: 10px 0 0 0;
-    padding: 0 12px 0px;
+    padding-left: 34px;
+    color: var(--TEXT-CLR, #5E6282);
 }
-.user-info p{
-    font-size: 10px;
-    color: #5E6282;
+
+.user-info-name {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
-.up-arrow{
-    position: relative;
-    left: 400px;
-    bottom: 60px;
+
+.user-info-description{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.up-arrow {
+    /* position: relative; Remove positioning */
+    /* left: 400px; Remove positioning */
+    /* bottom: 60px; Remove positioning */
     width: 30px;
     height: 50px;
     transform: rotate(180deg);
@@ -466,7 +598,7 @@ li :hover{
 
 /* /////////////////////////////////////////////////////////////////////// */
 .brands{
-    margin: 20px auto 24px;   
+    padding: 20px 0 24px;   
 }
 .brandslogo{
     display: flex;
@@ -569,25 +701,32 @@ li :hover{
 }
 .more-info {
     display: flex;
-    margin: 0 0 0 30px;
+    padding: 0 0 0 30px;
     flex-wrap: wrap;
+    line-height: 124.5%;
 }
 .more-info h4{
-    color:#181E4B;
+    color: var(--black, #080809);
     font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 21px;
+    font-weight: 700;
 }
+
 .company{
     margin: 20px 0 0 0;
 }
 .footer-company{
     display: flex;
     flex-direction: column;
-    margin: 0px 0 0 9px;
+    padding: 0px 0 0 9px;
 }
 .footer-company a{
     margin: 12px 0 0 -7px;
-    font-size: 12px;
+    font-size: 18px;
     color: #5E6282;
+    font-style: normal;
+    font-weight: 500;
 }
 .contact{
     margin: 20px 0 0 50px;
@@ -697,6 +836,7 @@ li :hover{
 
     .more-info {
         margin: 0;
+        gap: 40px;
     }
 
 
@@ -776,6 +916,9 @@ li :hover{
         margin: 30px;
         height: 200px;
     }
+    .feedback-section {
+        min-height: 700px;
+    }
     .feedback-box {
         width: 430px;
         height: 190px;
@@ -809,6 +952,9 @@ li :hover{
     .email{
         padding: 9px;
     }
+    .more-info{
+        gap: 5px;
+    }
 }
 @media (max-width: 480px) {
     .up-arrow{
@@ -823,6 +969,9 @@ li :hover{
     }
     .subscribe{
         width: 300px;
+    }
+    .more-info{
+        gap: 0;
     }
 }
 .social-icon{

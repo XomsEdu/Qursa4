@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./js/smooth.js" defer></script>
     <script src="./js/coment_slider.js" defer></script>
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -29,7 +28,7 @@
             <ul>
                 <li class="nav-item" id="nav"><a href="#destinations">Desitnations</a></li>
                 <li class="nav-item" id="nav"><a href="#booking">Booking</a></li>
-                <li class="nav-item" id="nav"><a href="#feedback">Testemonials</a></li>
+                <li class="nav-item" id="nav"><a href="#feedback">Testimonials</a></li>
                 <li class="nav-item" id="nav"><a href="#companies">Companies</a></li>
             </ul>
         </nav>
@@ -50,36 +49,39 @@
     </section>
     <section class="services">
         <div class="container">
-            <h3 class="category">Category</h3>
+            <p class="category">Category</p>
             <h2 class="category-title">We Offer Best Services</h2>
-            <div class="flex">
+            <ul class="flex">
                 <div class="offer-cards">
                     <svg class="pic"><use href="./assets/svg/category_1.svg#svg"/></svg>
-                    <h4 class="offer-cards-title">Calculated weather</h4>
+                    <h3 class="offer-cards-title">Calculated weather</h3>
                     <p class="offer-cards-desc">Built Wicket longer admire do barton vanity itself do in it.</p>
+                    <img class="hover-offer-card" src="assets/images/decore/rectangle.svg#decore" width="100" height="100"/>
                 </div>
                 <div class="offer-cards">
                     <svg class="pic"><use href="./assets/svg/category_2.svg#svg"/></svg>
-                    <h4 class="offer-cards-title">Best Flights</h4>
+                    <h3 class="offer-cards-title">Best Flights</h3>
                     <p class="offer-cards-desc">Engrossed listening. Park gate sell they west hard for the.</p>
+                    <img class="hover-offer-card" src="assets/images/decore/rectangle.svg#decore" width="100" height="100"/>
                 </div>
                 <div class="offer-cards">
                     <li class="pic"><img src="./assets/images/icons/category4.png" alt=""></li>
-                    <h4 class="offer-cards-title">Local Events</h4>
-                    <p class="offer-cards-desc">Barton vanity itself do in it. Preferd to men it engrossed listening.
-                    </p>
+                    <h3 class="offer-cards-title">Local Events</h3>
+                    <p class="offer-cards-desc">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                    <img class="hover-offer-card" src="assets/images/decore/rectangle.svg#decore" width="100" height="100"/>
                 </div>
                 <div class="offer-cards">
                     <svg class="pic"><use href="./assets/svg/category_4.svg#svg"/></svg>
-                    <h4 class="offer-cards-title">Customization</h4>
+                    <h3 class="offer-cards-title">Customization</h3>
                     <p class="offer-cards-desc">We deliver outsourced aviation services for military customers</p>
+                    <img class="hover-offer-card" src="assets/images/decore/rectangle.svg#decore" width="100" height="100"/>
                 </div>
-            </div>
+            </ul>
         </div>
     </section>
     <section class="top-selling" id="destinations">
         <div class="container">
-            <h3 class="category">Top Selling</h3>
+            <p class="category">Top Selling</p>
             <h2 class="category-title">Top Destinations</h2>
             <div class="destinations-cards">
                 <div class="destinations-card">
@@ -121,6 +123,7 @@
                             <p>28 Days Trip</p>
                         </div>
                     </div>
+                    <img class="decore-spring" src="/assets/images/decore/decore-spring.svg#Decore"/>
                 </div>
             </div>
         </div>
@@ -129,26 +132,26 @@
         <div class="container">
             <div class="booking-process">
                 <div class="booking">
-                    <h3 class="easy-and-fast">Easy and Fast</h3>
+                    <p class="easy-and-fast">Easy and Fast</p>
                     <h2 class="booking-steps-heading">Book Your Next Trip In 3 Easy Steps</h2>
                     <div class="booking-steps">
                         <svg class="booking-icons"><use href="./assets/svg/booktrip_1.svg#svg"/></svg>
                         <div class="process">
-                            <h5>Choose Destination</h5>
+                            <h4>Choose Destination</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
                         </div>
                     </div>
                     <div class="booking-steps">
                         <svg class="booking-icons"><use href="./assets/svg/booktrip_2.svg#svg"/></svg>
                         <div class="process">
-                            <h5>Make Payment</h5>
+                            <h4>Make Payment</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
                         </div>
                     </div>
                     <div class="booking-steps">
                         <svg class="booking-icons"><use href="./assets/svg/booktrip_3.svg#svg"/></svg>
                         <div class="process">
-                            <h5>Reach Airport on Selected Date</h5>
+                            <h4>Reach Airport on Selected Date</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
                         </div>
                     </div>
@@ -159,7 +162,7 @@
                     </div>
                     <div class="trip-details">
                         <h4 class="trip-destination">Trip To Greece</h4>
-                        <p class="trip-date">14-29 June| <span>by Robbin joseph</span></p>
+                        <p class="trip-date">14-29 June | <span>by Robbin joseph</span></p>
                         <div class="trip-info">
                             <svg class="trip-info-icon"><use href="./assets/svg/eaf_leaf.svg#svg"/></svg>
                             <svg class="trip-info-icon"><use href="./assets/svg/eaf_map.svg#svg"/></svg>
@@ -170,7 +173,13 @@
                             <svg class="trip-info-icon"><use href="./assets/svg/building.svg#svg"/></svg>
                             <p class="number-of-people">24 people going</p>
                         </div>
-                        <svg class="heart"><use href="./assets/svg/heart_icon.svg#svg"/></svg>
+                        <img class="heart" src="/assets/svg/heart_icon.svg#svg"/>
+                        <div class="heart-pop-up"><img class="rome-in-heart" src="/assets/images/destintions_section/rome-in-heart.png"/>
+                            <p class="heart-status">Ongoing</p>
+                            <h3 class="heart-destination">Trip to Rome</h3>
+                            <p class="heart-trip">40% completed</p>
+                            <img class="heart-loading" src="/assets/svg/heart-loading.svg#svg"/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,52 +187,55 @@
     </section>
     <section class="feedback-section" id="feedback">
         <div class="container">
-            <div class="feed-back">
-                <p class="subheading">Testimonials</p>
-                <h3 class="feedback-heading">What people say about Us.</h3>
-                <div class="slider-container">
-                    <img src="" alt="" class="slider">
-                    <svg class="slider"><use href="./assets/svg/slider_dots.svg#svg"/></svg>
-                </div>
-            </div>
-            <div class="feedback-box">
-                <img src="./assets/images/icons/user-icon.png" alt="Comment guy">
-                <div class="feedbacks">
-                    <p class="feedback">“On the Windows talking painted pasture yet its express parties use. Sure last upon
-                        he same as knew next. Of believed or diverted no.”</p>
-                    <div class="user-info">
-                        <h4>Chris Thomas</h4>
-                        <p>CEO of Red Button</p>
+            <div class="feedback-container">
+                <div class="feed-back">
+                    <p class="subheading">Testimonials</p>
+                    <h2 class="feedback-heading">What people say about Us.</h2>
+                    <div class="slider-container">
+                        <img src="" alt="" class="slider">
+                        <svg class="slider"><use href="./assets/svg/slider_dots.svg#svg"/></svg>
                     </div>
                 </div>
-                <svg class="slider-arrow up-arrow" onclick="changeSlide(1)"><use href="./assets/svg/slider_pagination.svg#svg"/></svg>
+                <div class="feedback-box">
+                    <img src="./assets/images/icons/user-icon.png" alt="Comment guy">
+                    <div class="feedbacks">
+                        <p class="feedback">“On the Windows talking painted pasture yet its express parties use. Sure last upon
+                            he same as knew next. Of believed or diverted no.”</p>
+                        <div class="user-info">
+                            <p class="user-info-name">Chris Thomas</p>
+                            <p class="user-info-description">CEO of Red Button</p>
+                        </div>
+                        <svg class="slider-arrow up-arrow" onclick="changeSlide(1)"><use href="./assets/svg/slider_pagination.svg#svg"/></svg>
+                    </div>
+                </div>
             </div>
         </div>
     </section>    
     <section class="brands" id="companies">
         <div class="container">
-            <div class="brandslogo">
+            <ul class="brandslogo">
                 <img src="./assets/images/company_section/image 1company.png" alt="Axon Airlines" class="brands-logo">
                 <img src="./assets/images/company_section/image 2company.png" alt="Jetstar" class="brands-logo">
                 <img src="./assets/images/company_section/image 3company.png" alt="Expedia" class="brands-logo">
                 <img src="./assets/images/company_section/image 4company.png" alt="Qantas" class="brand-logo">
                 <img src="./assets/images/company_section/image 5company.png" alt="Alitalia" class="brand-logo">
-            </div>
+            </ul>
         </div>
     </section>
-
     <section class="subscribe-section" id="sub">
         <div class="container">
             <div class="subscribe">
                 <img src="./assets/images/icons/sub-icon.png" alt="" class="send">
                 <h3>Subscribe to get information, latest news and other interesting offers about Jadoo</h3>
-                <div class="email">
-                    <input type="email" id="your-email" placeholder="Your Telegram"> <br>
-                    <button class="sub-btn" onclick="subscribe();">Subscribe</button>
-                </div>
+                <form action="#" class="email">
+                    <input type="email" id="your-email" placeholder="Your email" class="email-input"> <br>
+                    <button class="sub-btn" type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
     </section>
+    <script src="./js/sending.js"></script>
+    
     <footer class="footer">
         <div class="container">
             <div class="footer-name">
@@ -233,27 +245,27 @@
             <div class="more-info">
                 <div class="company">
                     <h4>Company</h4>
-                    <li class="footer-company">
+                    <ul class="footer-company">
                         <a href="#">About</a>
-                        <a href="#">careers</a>
+                        <a href="#">Careers</a>
                         <a href="#">Mobile</a>
-                    </li>
+                    </ul>
                 </div>
                 <div class="contact">
                     <h4>Contact</h4>
-                    <li class="footer-company footer-contact">
+                    <ul class="footer-company footer-contact">
                         <a href="#">Help/FAQ</a>
                         <a href="#">Press</a>
                         <a href="#">Affilates</a>
-                    </li>
+                    </ul>
                 </div>
                 <div class="more">
                     <h4>More</h4>
-                    <li class="footer-company footer-more">
+                    <ul class="footer-company footer-more">
                         <a href="#">Airlinefees</a>
                         <a href="#">Airline</a>
                         <a href="#">Low fare tips</a>
-                    </li>
+                    </ul>
                 </div>
             </div>
             <div class="app-and-social-media">
@@ -277,29 +289,6 @@
             <p>All rights reserved@jadoo.com</p>
         </a>
     </div>
-
-    <script src="./email.min.js"></script>
-    <script src="./js/subscribe.js"></script>
-
-    <script>
-        function subscribe(){
-            (function(){
-                emailjs.init(fI88cSR41iYjWjodl)
-            })
-            var params = {
-                to: document.querySelector("#your-email").value,
-            }
-            var serviceID = "service_bzupx32";
-            var templateID = "template_i2r4ubf";
-
-            emailjs.send(serviceID, templateID, params)
-            .then(res => {
-                alert("Email was sent");
-            })
-            .catch()
-        }
-    </script>
-
 </body>
 
 </html>
