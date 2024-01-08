@@ -1,9 +1,8 @@
-let currentSlide = 0;
+let currentSlide = 0; // Initialize currentSlide
 
 function changeSlide(direction) {
-    const slider = document.querySelector('.slider');
-    const sliderWidth = document.querySelector('.feedback-box').offsetWidth;
-    const totalSlides = document.querySelectorAll('.feedback-box').length;
+    const feedbackBoxes = document.querySelectorAll('.feedback-box');
+    const totalSlides = feedbackBoxes.length;
 
     currentSlide += direction;
 
@@ -13,6 +12,12 @@ function changeSlide(direction) {
         currentSlide = 0;
     }
 
-    const newTransformValue = -currentSlide * sliderWidth;
-    slider.style.transform = `translateX(${newTransformValue}px)`;
+    // Reset z-index for all slides
+    feedbackBoxes.forEach((box, index) => {
+        const zIndex = index === currentSlide ? 1 : 0;
+        box.style.zIndex = zIndex;
+    });
+
+    const newTransformValue = -currentSlide * 100; // Assuming each slide is 100% wide
+    document.querySelector('.slider').style.transform = `translateX(${newTransformValue}%)`;
 }
