@@ -658,9 +658,7 @@ li.pic{
     justify-content: center;
     margin: 40px auto;
 }
-#your-email{
-    width: 300px;
-    height: 40px;
+#subscribe{
     border-radius: 7px;
     margin: 0 5px 0 0;
     border: none;
