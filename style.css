@@ -542,10 +542,7 @@ li.pic{
 
 .feedback-box {
     flex-shrink: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #ffff;
+    position: relative; /* Change to relative */
 }
 
 .feedback-box:not(:first-child) {
@@ -559,6 +556,8 @@ li.pic{
     width: 68px;
     height: 68px;
     border-radius: 50%;
+    position: relative; /* Change to relative */
+    z-index: 100;
 }
 
 .feedbacks {
@@ -570,12 +569,16 @@ li.pic{
     top: -22px;
     border-radius: 10px;
     box-shadow: -2px 6px 19px -12px;
+    background-color: #ffff;
+    z-index: 1; /* Ensure the feedback box is above other elements */
 }
 
 .feedback {
     font-size: 16px;
     color: #5E6282;
     padding: 28px 68px 34px 34px;
+    position: relative; /* Change to relative */
+    z-index: 1; /* Ensure the feedback text is above other elements */
 }
 
 .user-info {
@@ -583,6 +586,8 @@ li.pic{
     margin: 10px 0 0 0;
     padding-left: 34px;
     color: var(--TEXT-CLR, #5E6282);
+    position: relative; /* Change to relative */
+    z-index: 1; /* Ensure the user info is above other elements */
 }
 
 .user-info-name {
@@ -603,9 +608,10 @@ li.pic{
 .down-arrow {
     cursor: pointer;
     position: absolute;
-    right: -100px;
+    right: -50px;
     width: 14px;
     height: 50px;
+    z-index: 2;
 }
 
 .up-arrow {
@@ -617,7 +623,6 @@ li.pic{
     top: 60%;
     transform: rotate(0deg);
 }
-
 
 
 /* /////////////////////////////////////////////////////////////////////// */
@@ -977,6 +982,10 @@ li.pic{
     .more-info{
         gap: 5px;
     }
+    .up-arrow,
+    .down-arrow{
+        left: 0;
+    } 
 }
 @media (max-width: 480px) {
     .brands{
