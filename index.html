@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/399ce3e909.js" crossorigin="anonymous"></script>
+    <title>Jadoo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/smooth.js" defer></script>
+    <script src="./js/coment_slider.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><svg><use href="./assets/svg/logo.svg#svg"></use></svg></div>
+        <nav>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars fa-2x"></i>
+            </label>
+            <ul>
+                <li class="nav-item" id="nav"><a href="#destinations">Desitnations</a></li>
+                <li class="nav-item" id="nav"><a href="#booking">Booking</a></li>
+                <li class="nav-item" id="nav"><a href="#feedback">Testimonials</a></li>
+                <li class="nav-item" id="nav"><a href="#companies">Companies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-box">
+                <p class="tagline">Best Destinations around the world</p>
+                <h1 class="heading">Travel, enjoy and live a new and full life</h1>
+                <p class="description">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it
+                    engrossed listening. Park gate sell they west hard for the.</p>
+                <div class="btns">
+                    <a href="#sub"><button class="find-out-more">Find out more</button></a>
+                </div>
+            </div>
+            <img src="./assets/images/hero_section/hero-img.png" alt="Турист з валізами" class="hero-img">
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <p class="category">Category</p>
+            <h2 class="category-title">We Offer Best Services</h2>
+            <ul class="flex">
+                <div class="offer-cards">
+                    <svg class="pic"><use href="./assets/svg/category_1.svg#svg"/></svg>
+                    <h3 class="offer-cards-title">Calculated weather</h3>
+                    <p class="offer-cards-desc">Built Wicket longer admire do barton vanity itself do in it.</p>
+                    <img class="hover-offer-card" src="assets/images/decore/rectangle.svg#decore" width="100" height="100"/>
+                </div>
+                <div class="offer-cards">
+                    <svg class="pic"><use href="./assets/svg/category_2.svg#svg"/></svg>
+                    <h3 class="offer-cards-title">Best Flights</h3>
+                    <p class="offer-cards-desc">Engrossed listening. Park gate sell they west hard for the.</p>
+                    <img class="hover-offer-card" src="assets/images/decore/rectangle.svg#decore" width="100" height="100"/>
+                </div>
+                <div class="offer-cards">
+                    <li class="pic"><img src="./assets/images/icons/category4.png" alt=""></li>
+                    <h3 class="offer-cards-title">Local Events</h3>
+                    <p class="offer-cards-desc">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                    <img class="hover-offer-card" src="assets/images/decore/rectangle.svg#decore" width="100" height="100"/>
+                </div>
+                <div class="offer-cards">
+                    <svg class="pic"><use href="./assets/svg/category_4.svg#svg"/></svg>
+                    <h3 class="offer-cards-title">Customization</h3>
+                    <p class="offer-cards-desc">We deliver outsourced aviation services for military customers</p>
+                    <img class="hover-offer-card" src="assets/images/decore/rectangle.svg#decore" width="100" height="100"/>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <section class="top-selling" id="destinations">
+        <div class="container">
+            <p class="category">Top Selling</p>
+            <h2 class="category-title">Top Destinations</h2>
+            <div class="destinations-cards">
+                <div class="destinations-card">
+                    <img src="./assets/images/destintions_section/destinations-rome.png" alt="" class="destinations-image">
+                    <div class="text-overlay">
+                        <div class="name-and-price">
+                            <p>Rome, Italty</p>
+                            <p>$5,42k</p>
+                        </div>
+                        <div class="trip-duration">
+                            <svg class="s-nav"><use href="./assets/svg/navigation.svg#svg"/></svg>
+                            <p>10 Days Trip</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="destinations-card">
+                    <img src="./assets/images/destintions_section/destinations-london.png" alt="" class="destinations-image">
+                    <div class="text-overlay">   
+                        <div class="name-and-price">
+                            <p>London, UK</p>
+                            <p>$4.2k</p>
+                        </div>
+                        <p></p>
+                        <div class="trip-duration">
+                            <svg class="s-nav"><use href="./assets/svg/navigation.svg#svg"/></svg>
+                            <p>12 Days Trip</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="destinations-card">
+                    <img src="./assets/images/destintions_section/destinations-eu.png" alt="" class="destinations-image">
+                    <div class="text-overlay">
+                        <div class="name-and-price">
+                            <p>Full Europe</p>
+                            <p>$15k</p>
+                        </div>
+                        <div class="trip-duration">
+                            <svg class="s-nav"><use href="./assets/svg/navigation.svg#svg"/></svg>
+                            <p>28 Days Trip</p>
+                        </div>
+                    </div>
+                    <img class="decore-spring" src="./assets/images/decore/decore-spring.svg#Decore"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="booking-info" id="booking">
+        <div class="container">
+            <div class="booking-process">
+                <div class="booking">
+                    <p class="easy-and-fast">Easy and Fast</p>
+                    <h2 class="booking-steps-heading">Book Your Next Trip In 3 Easy Steps</h2>
+                    <div class="booking-steps">
+                        <svg class="booking-icons"><use href="./assets/svg/booktrip_1.svg#svg"/></svg>
+                        <div class="process">
+                            <h4>Choose Destination</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
+                    </div>
+                    <div class="booking-steps">
+                        <svg class="booking-icons"><use href="./assets/svg/booktrip_2.svg#svg"/></svg>
+                        <div class="process">
+                            <h4>Make Payment</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
+                    </div>
+                    <div class="booking-steps">
+                        <svg class="booking-icons"><use href="./assets/svg/booktrip_3.svg#svg"/></svg>
+                        <div class="process">
+                            <h4>Reach Airport on Selected Date</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-card">
+                    <div class="booking-card-card">
+                        <img src="./assets/images/traveler-eaf.jpg" alt="" class="booking-card-card-image">
+                    </div>
+                    <div class="trip-details">
+                        <h4 class="trip-destination">Trip To Greece</h4>
+                        <p class="trip-date">14-29 June | <span>by Robbin joseph</span></p>
+                        <div class="trip-info">
+                            <svg class="trip-info-icon"><use href="./assets/svg/eaf_leaf.svg#svg"/></svg>
+                            <svg class="trip-info-icon"><use href="./assets/svg/eaf_map.svg#svg"/></svg>
+                            <svg class="trip-info-icon"><use href="./assets/svg/eaf_nav.svg#svg"/></svg>
+                        </div>
+
+                        <div class="no-of-people">
+                            <svg class="trip-info-icon"><use href="./assets/svg/building.svg#svg"/></svg>
+                            <p class="number-of-people">24 people going</p>
+                        </div>
+                        <img class="heart" src="./assets/svg/heart_icon.svg#svg"/>
+                        <div class="heart-pop-up"><img class="rome-in-heart" src="./assets/images/destintions_section/rome-in-heart.png"/>
+                            <p class="heart-status">Ongoing</p>
+                            <h3 class="heart-destination">Trip to Rome</h3>
+                            <p class="heart-trip">40% completed</p>
+                            <img class="heart-loading" src="./assets/svg/heart-loading.svg#svg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback-section" id="feedback">
+        <div class="container">
+            <div class="feedback-container">
+                <div class="feed-back">
+                    <p class="subheading">Testimonials</p>
+                    <h2 class="feedback-heading">What people say about Us.</h2>
+                    <div class="slider-container">
+                        <img src="./assets/svg/slider_dots.svg" alt="" class="slider">
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="feedback-box">
+                        <img class="feedback-guy" src="./assets/images/icons/user-icon.png" alt="Comment guy">
+                        <div class="feedbacks">
+                            <p class="feedback">“Next guy is just like me, can`t disagree.”</p>
+                            <div class="user-info">
+                                <p class="user-info-name">Chris Thomas</p>
+                                <p class="user-info-description">CEO of Red Button</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-box">
+                        <img class="feedback-guy" src="./assets/images/icons/ryan-gosling.jpg" alt="Comment guy">
+                        <div class="feedbacks">
+                            <p class="feedback">“On the Windows talking painted pasture yet its express parties use. Sure last upon
+                                he same as knew next. Of believed or diverted no.”</p>
+                            <div class="user-info">
+                                <p class="user-info-name">Ryan Gosling</p>
+                                <p class="user-info-description">CEO of Google</p>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="slider-arrow up-arrow" onclick="changeSlide(1)"><use href="./assets/svg/slider_pagination.svg#svg"/></svg>
+                    <svg class="slider-arrow down-arrow" onclick="changeSlide(-1)"><use href="./assets/svg/slider_pagination.svg#svg"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section class="brands" id="companies">
+        <div class="container">
+            <ul class="brandslogo">
+                <img src="./assets/images/company_section/image 1company.png" alt="Axon Airlines" class="brands-logo">
+                <img src="./assets/images/company_section/image 2company.png" alt="Jetstar" class="brands-logo">
+                <img src="./assets/images/company_section/image 3company.png" alt="Expedia" class="brands-logo">
+                <img src="./assets/images/company_section/image 4company.png" alt="Qantas" class="brand-logo">
+                <img src="./assets/images/company_section/image 5company.png" alt="Alitalia" class="brand-logo">
+            </ul>
+        </div>
+    </section>
+    <section class="subscribe-section" id="sub">
+        <div class="container">
+            <div class="subscribe">
+                <img src="./assets/images/icons/sub-icon.png" alt="" class="send">
+                <h3>Subscribe to get information, latest news and other interesting offers about Jadoo</h3>
+                <form action="#" class="email" id="subscribe">
+                    <input type="email" id="subscribe" placeholder="Your email" class="email-input"> <br>
+                    <button class="sub-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./js/form.js"></script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-name">
+                <h3>Jadoo.</h3>
+                <p>Book your trip in minute, get full Control for much longer.</p>
+            </div>
+            <div class="more-info">
+                <div class="company">
+                    <h4>Company</h4>
+                    <ul class="footer-company">
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Mobile</a>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h4>Contact</h4>
+                    <ul class="footer-company footer-contact">
+                        <a href="#">Help/FAQ</a>
+                        <a href="#">Press</a>
+                        <a href="#">Affilates</a>
+                    </ul>
+                </div>
+                <div class="more">
+                    <h4>More</h4>
+                    <ul class="footer-company footer-more">
+                        <a href="#">Airlinefees</a>
+                        <a href="#">Airline</a>
+                        <a href="#">Low fare tips</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="app-and-social-media">
+                <div class="social-media">
+                    <a href=""><svg class="social-icon"><use href="./assets/svg/facebook.svg#svg"/></svg></a>
+                    <a href=""><svg class="social-icon"><use href="./assets/svg/instagram.svg#svg"/></svg></a>
+                    <a href=""><svg class="social-icon"><use href="./assets/svg/twitter.svg#svg"/></svg></a>
+                </div>
+                <div class="app">
+                    <p>Discover our app</p>
+                </div>
+                <div class="apps-links">
+                    <a href=""><svg class="google-store-icon"><use class="google-store-icon" href="./assets/svg/google_play.svg#svg"/></svg></a>
+                    <a href=""><svg class="play-store-icon"><use class="play-store-icon" href="./assets/svg/play_store.svg#svg"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="rights">
+        <a href="">
+            <p>All rights reserved@jadoo.com</p>
+        </a>
+    </div>
+</body>
+
+</html>
